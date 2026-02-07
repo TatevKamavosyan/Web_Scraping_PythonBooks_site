@@ -1,0 +1,29 @@
+Python Book Library: Data Collection and Cleaning
+
+This project automates the process of collecting book information and organizing it into a clean Excel spreadsheet.
+
+How it works
+The project consists of two main steps, which are performed one after the other.
+
+1. Data Collection (scraping.py)
+In the first step, the program visits a website and collects information about books.
+What it does: It opens a browser, finds the titles and authors of the books, and saves them to an Excel file.
+Output: A file named Python_Books_Library.xlsx is created. At this stage, the data is not completely organized; titles and descriptions are often mixed in one column.
+
+2. Data Cleaning (scraping_clean.py)
+In the second step, the program processes the collected data to make it easier to read.
+What it does: It looks for separators (such as " : ") in the title and moves the extra text to a new column. It also removes extra spaces and fixes formatting errors.
+Result: A final file named Final_Python_Books_Library.xlsx is created. Everything is organized into three distinct columns: Book Title, Description, and Author.
+
+File Descriptions
+scraping.py: Code that scrapes data from the website.
+scraping_clean.py: Code that cleans and organizes the data.
+Python_Books_Library.xlsx: The raw output of the first step.
+Final_Python_Books_Library.xlsx: The final cleaned spreadsheet.
+
+How to Run
+1. Download the files to your computer.
+2. Install the necessary tools using this command: pip install -r requirements.txt
+3. Run the first file to collect data: python scraping.py
+4. Run the second file to clean the data: python scraping_clean.py
+5. Or Start the process: Run the main script: python run_project.py
